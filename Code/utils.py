@@ -44,7 +44,7 @@ def riemann_sum(h, x_beg = None, x_end = 1.0, dx = 1e-4):
     hs = dx * h(xs)
     hs[[0, -1]] /= 2
 
-    if 0:
+    if False:
         plt.plot(xs, h(xs))
         plt.xlim(left = 0)
         plt.xlim(right = 5)
@@ -53,10 +53,11 @@ def riemann_sum(h, x_beg = None, x_end = 1.0, dx = 1e-4):
 
     return (hs.sum(), hs, xs)
 
-def generate_rgg(N, embeddings_prior):
+def generate_rgg(N, embeddings_prior, squared_dist = True):
     embeddings = embeddings_prior(N)
+    eta = 2 if squared_dist else 1
 
-    adjacency_matrix = scipy.stats.bernoulli.rvs(np.exp(-euclidean_distances(embeddings, embeddings) ** 2)) # not symmetric, we will only consider the upper triangle
+    adjacency_matrix = scipy.stats.bernoulli.rvs(np.exp(-euclidean_distances(embeddings, embeddings) ** eta)) # not symmetric, we will only consider the upper triangle
     np.fill_diagonal(adjacency_matrix, 0)
 
     upper_triangle = np.triu(adjacency_matrix)

@@ -1,6 +1,8 @@
 import pandas as pd
 
-df = pd.read_csv('student_t_m1.csv')
+filename = 'gaussian_spherical_again_m1.csv'
+
+df = pd.read_csv(filename)
 df = df.round(3)
 print(df)
 
@@ -16,4 +18,4 @@ del df['Original Edges Std']
 del df['Found Edges Std']
 del df['Degree Std']
 
-df.to_csv('student_t_m1.csv', index = False)
+df.to_csv(filename, index = False)

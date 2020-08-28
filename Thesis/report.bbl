@@ -1,0 +1,58 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{simplegraphdef}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c2ec19d4bc79629476df8817c563f73b}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c2ec19d4bc79629476df8817c563f73b}
+      \strng{fullhash}{c2ec19d4bc79629476df8817c563f73b}
+      \strng{bibnamehash}{c2ec19d4bc79629476df8817c563f73b}
+      \strng{authorbibnamehash}{c2ec19d4bc79629476df8817c563f73b}
+      \strng{authornamehash}{c2ec19d4bc79629476df8817c563f73b}
+      \strng{authorfullhash}{c2ec19d4bc79629476df8817c563f73b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521288811}
+      \field{title}{Algorithmic Graph Theory}
+      \field{year}{1985}
+      \field{pages}{2}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://books.google.co.uk/books?id=Be6t04pgggwC
+      \endverb
+      \verb{url}
+      \verb https://books.google.co.uk/books?id=Be6t04pgggwC
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
