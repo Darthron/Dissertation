@@ -13,17 +13,18 @@ def total_variance(p1, p2):
         ret = 0.
         for k, v in p1.items():
             if k not in p2:
-                ret = max(ret, v)
+                ret += v
             else:
-                ret = max(ret, abs(v - p2[k]))
+                ret += abs(v - p2[k])
 
         for k, v in p2.items():
             if k not in p1:
-                ret = max(ret, v)
+                ret += v
     else:
-        ret = max(p1 - p2)
+        ret = np.sum(np.abs(p1 - p2))
 
-    return ret
+    print('\t\t RET: ' + str(ret))
+    return ret / 2
 
 # Gaussian spherical prior
 def gaussian_spherical_prior():
@@ -90,7 +91,7 @@ def experiment(params, priors, name, m = 1, squared_dist = True):
             g_o = generate_rgg(N, priors[i], squared_dist = squared_dist)
             o_dks, o_eps, o_geodesics = g_o.get_degree_stats()
 
-            if 'int' == type(m):
+            if isinstance(m, int):
                 rgg = RGG(g_o, m = m, squared_dist = squared_dist)
             else:
                 rgg = RGG(g_o, m = m[i], squared_dist = squared_dist)
@@ -98,7 +99,7 @@ def experiment(params, priors, name, m = 1, squared_dist = True):
             found_sigma = rgg.sigma_binary_search() / np.sqrt(2)
             print(found_sigma)
 
-            if 'int' == type(m):
+            if isinstance(m, int):
                 g_f = generate_rgg(N, partial(np.random.multivariate_normal, np.zeros(2 * m), found_sigma ** 2 * np.identity(2 * m)))
             else:
                 g_f = generate_rgg(N, partial(np.random.multivariate_normal, np.zeros(2 * m[i]), found_sigma ** 2 * np.identity(2 * m[i])))
@@ -122,13 +123,13 @@ def experiment(params, priors, name, m = 1, squared_dist = True):
     pickle.dump(found_edges_counts, f)
     pickle.dump(total_variance_graph_statistics, f)
 
-"""
 m = 1
 params = np.arange(0.1, 3.5, 0.3)
-priors = [partial(multivariate_t_rvs, np.array([0.0, 0.0]), np.array([[3, 1.5], [1.5, 1]]), 5)]
-experiment(params, priors, 'multivariate_t_dist1_5deg_non_diag', m = m, squared_dist = False)
+priors = [partial(multivariate_t_rvs, np.array([0.0, 0.0]), np.array([[3.0, 1.5], [1.5, 1.0]]), 15)]
+experiment(params, priors, 'test_skewed_t', m = m, squared_dist = True)
 """
 
 ms = np.array([i for i in range(1, 11)])
 priors = [partial(np.random.multivariate_normal, np.zeros(2 * m), np.identity(2 * m)) for m in ms]
-experiment(ms, priors, 'gaussian_ms', m = ms, squared_dist = True)
+experiment(ms, priors, 'test', m = ms, squared_dist = True)
+"""

@@ -139,7 +139,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>nty</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -1995,42 +1995,90 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">simplegraphdef</bcf:citekey>
+    <bcf:citekey order="1">word2vec</bcf:citekey>
+    <bcf:citekey order="2">glove</bcf:citekey>
+    <bcf:citekey order="3">fasttext</bcf:citekey>
+    <bcf:citekey order="4">node2vec</bcf:citekey>
+    <bcf:citekey order="5">deepwalk</bcf:citekey>
+    <bcf:citekey order="6">hoff2002latent</bcf:citekey>
+    <bcf:citekey order="7">rescal</bcf:citekey>
+    <bcf:citekey order="8">transe</bcf:citekey>
+    <bcf:citekey order="9">universalschema</bcf:citekey>
+    <bcf:citekey order="10">socialnetwork</bcf:citekey>
+    <bcf:citekey order="11">graphprotein</bcf:citekey>
+    <bcf:citekey order="12">simplegraphdef</bcf:citekey>
+    <bcf:citekey order="13">word2vec</bcf:citekey>
+    <bcf:citekey order="13">line</bcf:citekey>
+    <bcf:citekey order="13">watch</bcf:citekey>
+    <bcf:citekey order="14">edge2vec</bcf:citekey>
+    <bcf:citekey order="14">edgeembedd</bcf:citekey>
+    <bcf:citekey order="15">subrank</bcf:citekey>
+    <bcf:citekey order="15">sub2vec</bcf:citekey>
+    <bcf:citekey order="16">frequentist</bcf:citekey>
+    <bcf:citekey order="17">bayesconsistency</bcf:citekey>
+    <bcf:citekey order="18">statinference</bcf:citekey>
+    <bcf:citekey order="19">mcmc</bcf:citekey>
+    <bcf:citekey order="20">metropolis</bcf:citekey>
+    <bcf:citekey order="21">kldivergence</bcf:citekey>
+    <bcf:citekey order="22">gibbs</bcf:citekey>
+    <bcf:citekey order="23">freeenergy</bcf:citekey>
+    <bcf:citekey order="24">jensen</bcf:citekey>
+    <bcf:citekey order="25">erdos1</bcf:citekey>
+    <bcf:citekey order="25">erdos2</bcf:citekey>
+    <bcf:citekey order="25">erdos3</bcf:citekey>
+    <bcf:citekey order="26">rgg</bcf:citekey>
+    <bcf:citekey order="27">poisson</bcf:citekey>
+    <bcf:citekey order="28">penrosergg</bcf:citekey>
+    <bcf:citekey order="29">dynamicrgg</bcf:citekey>
+    <bcf:citekey order="30">generalrgg</bcf:citekey>
+    <bcf:citekey order="31">sphericalrgg</bcf:citekey>
+    <bcf:citekey order="32">softrgg</bcf:citekey>
+    <bcf:citekey order="33">exchangeableorbanz</bcf:citekey>
+    <bcf:citekey order="34">graphlim</bcf:citekey>
+    <bcf:citekey order="35">infrelmodel</bcf:citekey>
+    <bcf:citekey order="36">mondrian</bcf:citekey>
+    <bcf:citekey order="37">graphongp</bcf:citekey>
+    <bcf:citekey order="38">exchangeableorbanz</bcf:citekey>
+    <bcf:citekey order="39">graphlim</bcf:citekey>
+    <bcf:citekey order="40">infrelmodel</bcf:citekey>
+    <bcf:citekey order="41">mondrian</bcf:citekey>
+    <bcf:citekey order="42">graphongp</bcf:citekey>
+    <bcf:citekey order="43">exchangeableorbanz</bcf:citekey>
+    <bcf:citekey order="44">mathai</bcf:citekey>
+    <bcf:citekey order="45">mathai</bcf:citekey>
+    <bcf:citekey order="46">vonMisesFig</bcf:citekey>
+    <bcf:citekey order="47">vonMisesFig</bcf:citekey>
+    <bcf:citekey order="48">krioukov</bcf:citekey>
+    <bcf:citekey order="49">poincare</bcf:citekey>
+    <bcf:citekey order="50">wordnet</bcf:citekey>
+    <bcf:citekey order="51">poincare</bcf:citekey>
+    <bcf:citekey order="52">skipgram</bcf:citekey>
+    <bcf:citekey order="52">lorentz</bcf:citekey>
+    <bcf:citekey order="53">glove</bcf:citekey>
+    <bcf:citekey order="54">word2vec</bcf:citekey>
+    <bcf:citekey order="55">skipgram</bcf:citekey>
+    <bcf:citekey order="55">poincareglove</bcf:citekey>
+    <bcf:citekey order="56">hnn</bcf:citekey>
+    <bcf:citekey order="56">ahnn</bcf:citekey>
+    <bcf:citekey order="57">krioukov</bcf:citekey>
+    <bcf:citekey order="58">representation</bcf:citekey>
+    <bcf:citekey order="59">hunter</bcf:citekey>
+    <bcf:citekey order="60">hunter</bcf:citekey>
+    <bcf:citekey order="61">box</bcf:citekey>
+    <bcf:citekey order="61">gelman</bcf:citekey>
+    <bcf:citekey order="62">tvd</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nty">
+  <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="nty/global//global/global"
+                name="none/global//global/global"
                 type="entry"
-                sortingtemplatename="nty"
+                sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"

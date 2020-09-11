@@ -77,7 +77,7 @@ def generate_rgg(N, embeddings_prior, squared_dist = True):
             i += 1
 
     while curr_index < N:
-        edges_lists.append([])
+        edges_lists.append(set([]))
         curr_index += 1
 
     return Graph(N, edges_lists)

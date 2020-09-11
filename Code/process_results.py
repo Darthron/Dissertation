@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-filename = 'gaussian_ms_m[ 1  2  3  4  5  6  7  8  9 10]'
+filename = 'test_skewed_t_m1'
 f = open(filename + '.txt', 'rb')
 
 m = pickle.load(f)
@@ -21,7 +21,7 @@ found_edges_counts = np.asarray(pickle.load(f))
 total_variance_graph_statistics = np.asarray(pickle.load(f))
 
 df = pd.DataFrame()
-df['Params'] = params
+#df['Params'] = params
 df['Original Edges'] = original_edges_counts.mean(axis = 1)
 df['Original Edges Std'] = original_edges_counts.std(axis = 1)
 df['Found Edges'] = found_edges_counts.mean(axis = 1)

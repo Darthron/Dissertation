@@ -2,28 +2,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Background And Related Work}{4}{chapter.2}% 
+\contentsline {chapter}{\numberline {2}Background And Related Work}{5}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Bayesian Statistics And Variational Inference}{4}{section.2.1}% 
+\contentsline {section}{\numberline {2.1}Bayesian Statistics And Variational Inference}{5}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Random Geometric Graphs}{9}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}Random Geometric Graphs}{10}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Exchangeability}{11}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Exchangeability}{12}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Exchangeable Arrays}{15}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.1}Exchangeable Arrays}{16}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Quadratic Forms In Random Variables}{18}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Quadratic Forms In Random Variables}{20}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}RGG Inference}{19}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}RGG Inference}{22}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.1}Relation To Graphons}{21}{subsection.3.0.1}% 
+\contentsline {section}{\numberline {3.1}Spherical RGG}{23}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Spherical RGG}{22}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Hyperbolic RGG}{24}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Hyperbolic RGG}{23}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Euclidean RGG}{26}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Summary and Conclusion}{24}{chapter.4}% 
+\contentsline {subsection}{\numberline {3.3.1}Relation To Graphons}{29}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Distance PDF}{29}{appendix.A}% 
+\contentsline {subsection}{\numberline {3.3.2}Synthetic Experiments}{30}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Free Energy}{34}{appendix.B}% 
+\contentsline {chapter}{\numberline {4}Summary and Conclusion}{37}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Distance PDF}{46}{appendix.A}% 
